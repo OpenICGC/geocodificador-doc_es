@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/documentacio.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/documentacio.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_adreca.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_adreca.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_area.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_area.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_comarca_municipi.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_comarca_municipi.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_invers.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_invers.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_llogaret1.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_llogaret1.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_llogaret2.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_llogaret2.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_prioritzar.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_prioritzar.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_tipus.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_tipus.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_toponim.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_toponim.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/ex_visor.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_visor.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/index.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/index.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/parametres_autocompletar.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/parametres_autocompletar.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/parametres_cerca.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/parametres_cerca.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/parametres_invers.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/parametres_invers.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/tipusToponims.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/tipusToponims.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8000/geocodificador-doc-es/visor.es/</loc>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/visor.es/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
