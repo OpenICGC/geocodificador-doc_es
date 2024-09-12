@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://openicgc.github.io/geocodificador-doc_es/ex_integracio/</loc>
+         <lastmod>2024-09-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://openicgc.github.io/geocodificador-doc_es/ex_invers.es/</loc>
          <lastmod>2024-09-12</lastmod>
          <changefreq>daily</changefreq>
