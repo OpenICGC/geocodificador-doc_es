@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc_es/ex_adreca.es/">
+        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc_es/ex_pk.es/">
       
       
-        <link rel="prev" href="../documentacio.es/">
+        <link rel="prev" href="../ex_integracio/">
       
       
-        <link rel="next" href="../ex_toponim.es/">
+        <link rel="next" href="../visor.es/">
       
       
       <link rel="icon" href="../assets/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>1.1 Buscar una dirección - Geocodificador ICGC</title>
+        <title>1.12 Buscar un punto kilométrico - Geocodificador ICGC</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#11-buscar-una-direccion-postal" class="md-skip">
+        <a href="#12-buscar-un-punto-kilometrico" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.1 Buscar una dirección
+              1.12 Buscar un punto kilométrico
             
           </span>
         </div>
@@ -303,7 +303,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../ex_adreca.es/" class="md-tabs__link">
           
   
   Ejemplos
@@ -644,19 +644,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ex_adreca.es/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -665,7 +656,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -885,10 +875,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ex_pk.es/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -897,6 +896,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1054,12 +1054,13 @@
   
 
 
-<h1 id="11-buscar-una-direccion-postal">1.1 Buscar una dirección postal</h1>
-<p>Hay que indicar la dirección a buscar en el parámetro <strong>text</strong>.</p>
-<p>Por ejemplo, indicando <span style="color:red"><em>nou 10,girona</em></span>, obtenemos las coordenadas geográficas de la dirección postal <strong>Carrer Nou 10, Girona</strong>: <span style="color:green">2.82176174, 41.98273154</span>: 
-<a href="https://eines.icgc.cat/geocodificador/autocompletar?text=nou 10,girona&amp;size=1&amp;layers=address" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?text=<span style="color:red"><em>nou 10,girona</em></span>&amp;size=1&amp;layers=address</a></p>
+<h1 id="12-buscar-un-punto-kilometrico">1.2 Buscar un punto kilométrico</h1>
+<p>Se indica el punto kilométrico a buscar en el parámetro <strong>text</strong>.</p>
+<p>Si se indica el parámetro <strong>layers</strong>, debe contener el valor <strong>pk</strong>.</p>
+<p>Por ejemplo, indicando <span style="color:red"><strong>C-25 143.0</strong></span>, obtenemos las coordenadas geográficas del punto kilométrico (<span style="color:green">1.90750462, 41.78388114</span>). </p>
+<p><a href="https://eines.icgc.cat/geocodificador/autocompletar?text=C-25 143.0&amp;layers=pk&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?text=<span style="color:red"><strong>C-25 143.0</strong></span>&amp;layers=pk&amp;size=1</a></p>
 <p>El resultado es:</p>
-<p><img alt="" src="../img/autocompletar-address.png" /></p>
+<p><img alt="" src="../img/pk.png" /></p>
 
 
 

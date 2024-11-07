@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://openicgc.github.io/geocodificador-doc_es/parametres_cerca.es/">
+        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc_es/parametres_cerca.es/">
       
       
         <link rel="prev" href="..">
@@ -956,6 +956,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex_pk.es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.12 Buscar un punto kilométrico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1197,6 +1218,9 @@
 <li>
 <p><a href="https://eines.icgc.cat/geocodificador/cerca?text=montclar,riudecanyes&amp;layers=topo1" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=montclar,riudecanyes&amp;layers=topo1</a></p>
 </li>
+<li>
+<p><a href="https://eines.icgc.cat/geocodificador/cerca?text=c-25 143.0&amp;layers=pk" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=c-25 143.0&amp;layers=pk</a></p>
+</li>
 </ul>
 </li>
 <li>
@@ -1208,6 +1232,7 @@
 <p>Se pueden indicar los valores siguientes para segregar los topónimos en dos grupos:</p>
 <p>. <strong>topo1</strong>: topónimos referentes a agrupaciones de población (municipios, capitales de municipio, entidades de población, diseminados y barrios)</p>
 <p>. <strong>topo2</strong>: resto de topónimos.</p>
+<p>. <strong>pk</strong>: puntos kilométricos.</p>
 <p>Ejemplo, para encontrar topónimos con el nombre <em>Riera de Gaià</em>: <a href="https://eines.icgc.cat/geocodificador/cerca?text=riera%20de%20gaia&amp;layers=topo1,topo2" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=riera%20de%20gaia&amp;layers=topo1,topo2</a></p>
 </li>
 <li>
@@ -1288,8 +1313,8 @@
 <td><strong>layers</strong></td>
 <td>cadena de texto</td>
 <td>No</td>
-<td>Tipo de elementos a buscar: [address, tops, <em>topo_tipo_id</em>, topo1, topo2]</td>
-<td>topo1,topo2,address</td>
+<td>Tipo de elementos a buscar: [address, tops, <em>topo_tipo_id</em>, topo1, topo2, pk]</td>
+<td>topo1,topo2,address,pk</td>
 <td>address,topo1</td>
 </tr>
 <tr>
@@ -1393,28 +1418,28 @@
 </tr>
 <tr>
 <td><strong>etiqueta</strong></td>
-<td>Agregación de campos. Para direcciones: calle portal, municipio (<em>llogaret</em>). <em>Nota: Si el <em>llogaret</em> coincide con el municipio, no se indica</em>. Par topónimos: topónimo, municipio</td>
+<td>Agregación de campos. Para direcciones: calle portal, municipio (<em>llogaret</em>). <em>Nota: Si el <em>llogaret</em> coincide con el municipio, no se indica</em>. Para topónimos: topónimo, municipio. Para puntos kilométricos: codigo_via km</td>
 <td>Todos</td>
 </tr>
 <tr>
 <td><strong>municipo</strong></td>
 <td>Municipio. En algunos topónimos, no hay un municipio asignado y toma el valor "-"</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>id_municipi</strong></td>
 <td>Identificador del municipio. En algunos topónimos, no hay un municipio assignado y toma el valor ""</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>comarca</strong></td>
 <td>Comarca. En algunos topónimos, no hay una comarca asignada y toma el valor "-"</td>
-<td>Direcciones</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>id_comarca</strong></td>
 <td>Identificador de la comarca. En algunos topónimos, no hay una comarca assignada y toma el valor ""</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong><em>llogaret</em></strong></td>
@@ -1429,7 +1454,7 @@
 <tr>
 <td><strong>nom</strong></td>
 <td>Nombre de la calle, de la edificación aislada o del topónimo</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>tipus_via</strong></td>
@@ -1481,6 +1506,16 @@
 <td>Coordenadas UTM del rectángulo contenedor de la calle</td>
 <td>Direcciones</td>
 </tr>
+<tr>
+<td><strong>via</strong></td>
+<td>Identificador de la via</td>
+<td>Puntos kilométricos</td>
+</tr>
+<tr>
+<td><strong>km</strong></td>
+<td>Kilométro (con un decimal)</td>
+<td>Puntos kilométricos</td>
+</tr>
 </tbody>
 </table>
 <h2 id="ejemplos-de-salida-segun-tipo-de-layer">Ejemplos de salida según tipo de layer</h2>
@@ -1511,6 +1546,21 @@
 </tr>
 <tr>
 <td><img alt="" src="../img/cerca-top.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Punto kilométrico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://eines.icgc.cat/geocodificador/cerca?text=c-25%20143.0&amp;layers=pk&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=c-25%20143.0&amp;layers=pk&amp;size=1</a></td>
+</tr>
+<tr>
+<td><img alt="" src="../img/pk.png" /></td>
 </tr>
 </tbody>
 </table>

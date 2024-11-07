@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://openicgc.github.io/geocodificador-doc_es/parametres_invers.es/">
+        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc_es/parametres_invers.es/">
       
       
         <link rel="prev" href="../parametres_autocompletar.es/">
@@ -956,6 +956,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex_pk.es/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.12 Buscar un punto kilométrico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1164,7 +1185,7 @@
 <h1 id="busqueda-inversa">Búsqueda inversa</h1>
 <p>URL de conexión: <a href="https://eines.icgc.cat/geocodificador/invers" target="_blank">https://eines.icgc.cat/geocodificador/invers</a> (GET)</p>
 <h2 id="descripcion">Descripción</h2>
-<p>La operación <strong>invers</strong> (geocodificación inversa) busca las direcciones y topónimos más próximos a un punto geográfico determinado, especificado por su latitud y longitud.</p>
+<p>La operación <strong>invers</strong> (geocodificación inversa) busca las direcciones, topónimos y puntos kilométricos más próximos a un punto geográfico determinado, especificado por su latitud y longitud.</p>
 <p>El resultado se obtiene en formato GeoJSON.</p>
 <p>Por ejemplo, para buscar la dirección más próxima a las coordenadas <em>41.385965, 2.16687</em>, podemos hacer la petición <a href="https://eines.icgc.cat/geocodificador/invers?lat=41.385965&amp;lon=2.16687&amp;size=1&amp;layers=address" target="_blank">https://eines.icgc.cat/geocodificador/invers?lat=41.385965&amp;lon=2.16687&amp;size=1&amp;layers=address</a>, que tiene la respuesta: <img alt="" src="../img/invers.png" /></p>
 <h2 id="construccion-de-la-consulta">Construcción de la consulta</h2>
@@ -1188,6 +1209,7 @@
 <p>Se pueden indicar los valores siguientes para segregar los topónimos en dos grupos:</p>
 <p>. <strong>topo1</strong>: topónimos referentes a agrupaciones de población (municipios, capitales de municipio, entidades de población, diseminados y barrios)</p>
 <p>. <strong>topo2</strong>: resto de topónimos.</p>
+<p>. <strong>pk</strong>: puntos kilométricos.</p>
 <p>Ejemplo, para encontrar topónimos: <a href="http://eines.icgc.cat/geocodificador/invers?lon=0.20949814&amp;lat=41.12599206&amp;layers=tops" target="_blank">http://eines.icgc.cat/geocodificador/invers?lon=0.20949814&amp;lat=41.12599206&amp;layers=tops</a></p>
 </li>
 <li>
@@ -1253,8 +1275,8 @@
 <td><strong>layers</strong></td>
 <td>cadena de texto</td>
 <td>No</td>
-<td>Tipo de elementos a buscar: [address, tops, <em>topo_tipo_id</em>, topo1, topo2]</td>
-<td>topo1,topo2,address</td>
+<td>Tipo de elementos a buscar: [address, tops, <em>topo_tipo_id</em>, topo1, topo2, pk ]</td>
+<td>topo1,topo2,address,pk</td>
 <td>address,topo1</td>
 </tr>
 <tr>
@@ -1307,28 +1329,28 @@
 </tr>
 <tr>
 <td><strong>etiqueta</strong></td>
-<td>Agregación de campos. Por direcciones: calle portal, municipio (<em>llogaret</em>). <em>Nota: Si el <em>llogaret</em> coincide con el municipio, no se indica</em>. Por topónimos: topónimo, municipio</td>
+<td>Agregación de campos. Por direcciones: calle portal, municipio (<em>llogaret</em>). <em>Nota: Si el <em>llogaret</em> coincide con el municipio, no se indica</em>. Por topónimos: topónimo, municipio. Por puntos kilométricos: codi_via km</td>
 <td>Todos</td>
 </tr>
 <tr>
 <td><strong>municipo</strong></td>
 <td>Municipio. En algunos topónimos, no hay un municipio asignado y toma el valor "-"</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>id_municipi</strong></td>
 <td>Identificador del municipio. En algunos topónimos, no hay un municipio assignado y toma el valor ""</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>comarca</strong></td>
 <td>Comarca. En algunos topónimos, no hay una comarca asignada y toma el valor "-"</td>
-<td>Direcciones</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>id_comarca</strong></td>
 <td>Identificador de la comarca. En algunos topónimos, no hay una comarca assignada y toma el valor ""</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong><em>llogaret</em></strong></td>
@@ -1343,7 +1365,7 @@
 <tr>
 <td><strong>nom</strong></td>
 <td>Nombre de la calle, de la edificación aislada o de topónimo</td>
-<td>Todos</td>
+<td>Direcciones y topónimos</td>
 </tr>
 <tr>
 <td><strong>tipus_via</strong></td>
@@ -1390,6 +1412,16 @@
 <td>Coordenadas UTM del rectángulo contenedor de la calle</td>
 <td>Direcciones</td>
 </tr>
+<tr>
+<td><strong>via</strong></td>
+<td>Identificador de la via</td>
+<td>Puntos kilométricos</td>
+</tr>
+<tr>
+<td><strong>km</strong></td>
+<td>Kilométro (con un decimal)</td>
+<td>Puntos kilométricos</td>
+</tr>
 </tbody>
 </table>
 <h2 id="ejemplos-de-salida-segun-tipo-de-layer">Ejemplos de salida según tipo de layer</h2>
@@ -1420,6 +1452,21 @@
 </tr>
 <tr>
 <td><img alt="" src="../img/invers3.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Punto kilométrico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://eines.icgc.cat/geocodificador/invers?lon=1.90750462&amp;lat=41.78388114&amp;layers=pk&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/invers?lon=1.90750462&amp;lat=41.78388114&amp;layers=pk&amp;size=1</a></td>
+</tr>
+<tr>
+<td><img alt="" src="../img/inverspk.png" /></td>
 </tr>
 </tbody>
 </table>
